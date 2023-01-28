@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKE1923</title>
+    <link rel="sortcut icon" type="x-icon" href="icon1.png">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/font/css/all.css">
+
+</head>
+<body>
+    <!--home page-->
+
+
+    <!----navigation html starting point-->
+   <section>
+    <div>
+        <div class="navigation">
+            <ul>
+                <li class="list1" style="--clr:#f0a925">
+                    <a href="#home">
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
+                        <span class="title">Home</span> 
+                    </a>
+                </li>
+                <li class="list2" style="--clr:#97eb37">
+                    <a href="#about">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <span class="title">About me</span> 
+                    </a>
+                </li>
+                <li class="list3" style="--clr:#f74802">
+                    <a href="#services">
+                        <span class="icon"><ion-icon name="bookmarks"></ion-icon></span>
+                        <span class="title">Services</span> 
+                    </a>
+                </li>
+                <li class="list4" style="--clr:#18e1f0">
+                    <a href="#ccontact">
+                        <span class="icon"><ion-icon name="contacts"></ion-icon></span>
+                        <span class="title">Contact</span> 
+                    </a>
+                </li>
+                <li class="list5" style="--clr:#f018c1">
+                    <a href="#help">
+                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                        <span class="title">Help</span> 
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script>
+            //add active class in selected tab
+            const list = document.querySelectorAll('.list1, .list2, .list3, .list4, .list5');
+            function activeLink(){
+                list.forEach((item) =>
+                item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click',activeLink));
+        </script>
+    </div>
+   </section> 
+    <!----navigation html stoping point-->
+      <section id="home"> 
+        <div class="container">
+         <div class="hero-text">
+             <h3>Hi, There!</h3>
+             <h1> <span class="i">I</span> Am <span class="name"></span></h1>
+             <p>your are the semicolon to my statement;</p>
+     
+         </div>
+        </div>
+      </section>
+        <script src="assets/js/typed.js"></script>
+        <script>
+      var typed = new Typed('.name', {
+        strings: [
+            'Mike,',
+            'Student,',
+            'Web Developer.'
+        ],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true
+        
+        });
+        </script>
+     
+        
+       <!---about section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="" >
+        </div>
+        <div class="about-text">
+            <h2>About <span class="about-me">Me</span></h2>
+            <h4>Creative UI/UX Designer!</h4>
+            <p>-I'm a creative Full Stack Web Developer based in Ethiopia. I'm very passionate and dedicated to my work. With few years experience as a professional Full Stack Developer, I have acquired the skills necessary to build great, appealing, and premium websites that meet the latest web standards.</p>
+
+            <p>-Detail-orientated Web Developer adept at interpreting blueprints, working with others, and meeting production deadlines. Skilled at quickly learning new processes, technologies, and machinery. Self-motivated with strong organizational and time management abilities. Most importantly, I'm constantly trying to learn new skills to improve myself and my work. <br><a href="#contact"><button class="more">More About</button></a>   
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="scontainer">
+  
+          <div class="section-title">
+            <h2> <span class="S">S</span>ervices</h2>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+              <div class="icon"><i class="fa-solid fa-code"></i></div>
+              <h4 class="title"><a href="">Web Development</a></h4>
+              <p class="description">I do some reserches before I start the job. To choose the right way for the job.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="fa-sharp fa-solid fa-tags"></i></div>
+              <h4 class="title"><a href="">Beautiful Code</a></h4>
+              <p class="description">Working on the way of writing code to make it better and clean readable for everyone.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="fa-solid fa-face-smile"></i></div>
+              <h4 class="title"><a href="">Fully Responsive</a></h4>
+              <p class="description">I design my websites to be responsive and work on different devices properly.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="fa-solid fa-thumbs-up"></i></div>
+              <h4 class="title"><a href="">Quick Learner</a></h4>
+              <p class="description">I always ready to learn something new things and I have the ability of Quick learner.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="fa-solid fa-clock"></i></div>
+              <h4 class="title"><a href="">Online</a></h4>
+              <p class="description">I am always available and easy to reach.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon"><i class="fa-solid fa-heart"></i></div>
+              <h4 class="title"><a href="">Made with Love</a></h4>
+              <p class="description">Is it really open source if it's not made with love? Always be certain when you use our website.</p>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Services Section -->               
+            
+        </div>
+    </section>
+    <!---contact section-->
+   <section class="contact" id="contact">
+    <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>If You Have Any Project In Your Mind.</h4>
+        <p>I'm a UI/UX Designer - creating bold and brave interface designfor companies all across the world</p>
+        <div class="list">
+          <li><a href="#">0955191990</a></li>
+          <li><a href="#">hello@gmail.com</a></li>
+          <li><a href="#">Like Share & Subscribe</a></li>
+        </div>
+        <div class="contact-icons">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="contact-form" id="ccontact">
+      <form action="">
+        <input type="name" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email Adress">
+        <input type="" placeholder="Your Mobile Number" required>
+        <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+        <input type="submit" value="Send Message" class="submit">
+      </form>
+
+    </div>
+
+   </section>
+   <!--help part-->
+   <section class="help" id="help">
+    <footer>
+      <ul class="social-icons">
+        <li>
+          <a href="#"><i class="fa-solid fa-m"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-i"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-k"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-e"></i></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="#home">Home</a>
+          <a href="#about">About me</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="#help">Help</a>
+        </li>
+      </ul>
+      <p><button class="here">Click HERE to see a FAQ</button></p>
+  </footer>
+
+   </section>
+</body>
+</html>
